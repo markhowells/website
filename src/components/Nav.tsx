@@ -11,7 +11,6 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 4rem 0;
-    background: ${colors.offWhite};
     position: relative;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -46,7 +45,6 @@ const StyledNav = styled.nav`
             padding-top: 8rem;
             min-height: 95vh;
             align-items: center;
-            background: ${colors.offWhite};
             z-index: 1;
         }
 
@@ -220,7 +218,7 @@ const Nav = () => {
     }
 
     return (
-            <div className="grey-container" style={{ zIndex: 9999 }}>
+            <div style={{ zIndex: 9999 }}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                         <div className="nav__burger-container">
