@@ -207,7 +207,7 @@ const StyledNav = styled.nav`
     }
 `
 
-const Nav = () => {
+const Nav = ({ shouldHaveGreyBackground }: { shouldHaveGreyBackground?: boolean }) => {
     const [isNavRendered, setIsNavRendered] = useState<boolean>(false)
 
     const toggleNavigation = () => {
@@ -215,7 +215,7 @@ const Nav = () => {
     }
 
     return (
-            <div style={{ zIndex: 9999 }}>
+            <div style={{ zIndex: 9999 }} className={`${shouldHaveGreyBackground ? 'grey-container': ''}`}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                         <div className="nav__burger-container">
